@@ -1,0 +1,44 @@
+<view class='wrap'>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>Title</view>
+    <textarea  class='wrap-title-input' placeholder="名称" auto-height bindinput="bindTitleInput"/>
+  </view>
+   <view class='wrap-title'>
+    <view class='wrap-title-label'>CompleteSt.</view>
+    <switch bindchange="switch2Change" />
+  </view>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>Detail</view>
+    <textarea  class='wrap-title-input' placeholder="明细" auto-height bindinput="bindDetailInput"/>
+  </view>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>Begin Date</view>
+    <picker mode="date" value="{{beginDate}}" start="2018-01-01" end="2030-09-01" bindchange="bindBeginDateChange">
+      <view class='wrap-title-input'> {{beginDate}} </view>
+    </picker>
+  </view>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>End Date</view>
+    <picker mode="date" value="{{endDate}}" start="2018-01-01" end="2030-09-01" bindchange="bindEndDateChange">
+      <view class='wrap-title-input'> {{endDate}} </view>
+    </picker>
+  </view>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>Class</view>
+    <picker value="{{index}}" range="{{classArray}}" bindchange="bindClassChange">
+      <view class='wrap-title-input'>{{classArray[index]}} </view>
+    </picker>
+  </view>
+
+  <view class="wrap-title">
+    <view class='wrap-title-label'>Priority(The most important level is 5)</view>
+    <view class="wrap-title-input">
+      <slider bindchange="slider4change" min="1" max="5" show-value/>
+    </view>
+  </view>
+  <view class='wrap-title'>
+    <view class='wrap-title-label'>Note</view>
+    <textarea  class='wrap-title-input' placeholder="备注" auto-height bindinput="bindNoteInput"/>
+  </view>
+  <button type ="primary" size="defaut" class='button' bindtap="submit">DOWN</button>
+</view>

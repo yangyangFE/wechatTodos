@@ -1,0 +1,25 @@
+/* pages/about/about.wxss */
+.wrap{
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  padding:0 10rpx;
+  margin-left: 3%;
+  line-height: 88rpx;
+  background: #fff;
+  color: #000;
+  box-sizing:border-box;
+  border-bottom:1px solid #e4e4e4;
+}
+.wrap:last-child{
+  border: none;
+}
+.wrap-title{
+  
+}
+.wrap-detail{
+  color:#d5d5d5;
+}
+.content{
+  background:#fff;
+}

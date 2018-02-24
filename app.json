@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/todo/todo",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TODO",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "TODO",
+        "iconPath": "static/img/todo-o.png",
+        "selectedIconPath": "static/img/todo.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "Add",
+        "iconPath": "static/img/add-o.png",
+        "selectedIconPath": "static/img/add.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "DONE",
+        "iconPath": "static/img/done-o.png",
+        "selectedIconPath": "static/img/done.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "ABOUT",
+        "iconPath": "static/img/about-o.png",
+        "selectedIconPath": "static/img/about.png"
+      }
+    ]
+  }
+}

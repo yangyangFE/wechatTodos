@@ -1,0 +1,9 @@
+<!--pages/about/about.wxml-->
+<view class='content'>
+  <view wx:for="{{aboutList}}" class='wrap'>
+    <view class='wrap-title'>{{item.name}}</view>
+    <view class='wrap-detail'>
+      {{item.value}}
+    </view>
+  </view>
+</view>

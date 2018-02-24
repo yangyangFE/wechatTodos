@@ -1,0 +1,10 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view wx:for="{{todoList}}" class='wrap'>
+    <view class='wrap-title'>{{item.title}}
+    </view>
+    <view class='wrap-detail'>
+      {{item.detail}}
+    </view>
+  </view>
+</view>
